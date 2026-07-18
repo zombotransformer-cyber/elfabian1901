@@ -1,0 +1,174 @@
+.white-chip .product-art {
+  background: linear-gradient(145deg, #654537, #b09174);
+}
+
+.white-chip .cookie {
+  background:
+    radial-gradient(circle at 29% 26%, #fff4de 0 5px, transparent 6px),
+    radial-gradient(circle at 66% 55%, #fff4de 0 5px, transparent 6px),
+    radial-gradient(circle at 45% 73%, #fff4de 0 5px, transparent 6px),
+    radial-gradient(circle at 75% 20%, #fff4de 0 4px, transparent 5px),
+    linear-gradient(135deg, #71442e, #31180e);
+}
+
+.sprinkles .product-art {
+  background: linear-gradient(145deg, #292528, #767070);
+}
+
+.sprinkles .cookie {
+  background:
+    radial-gradient(circle at 29% 26%, #ee5c5f 0 4px, transparent 5px),
+    radial-gradient(circle at 66% 55%, #55b7e1 0 5px, transparent 6px),
+    radial-gradient(circle at 45% 73%, #ffd247 0 4px, transparent 5px),
+    radial-gradient(circle at 74% 25%, #91bf63 0 4px, transparent 5px),
+    radial-gradient(circle at 20% 58%, #e682c1 0 4px, transparent 5px),
+    linear-gradient(135deg, #f0c869, #c77f35);
+}
+
+.pecans .product-art {
+  background: linear-gradient(145deg, #73523b, #c69a6c);
+}
+
+.pecans .cookie {
+  background:
+    radial-gradient(ellipse at 29% 26%, #6e421e 0 7px, transparent 8px),
+    radial-gradient(ellipse at 66% 55%, #6e421e 0 7px, transparent 8px),
+    radial-gradient(ellipse at 45% 73%, #6e421e 0 6px, transparent 7px),
+    radial-gradient(ellipse at 74% 24%, #6e421e 0 5px, transparent 6px),
+    linear-gradient(135deg, #edc56c, #ba7938);
+}
+
+.product-info .product-description {
+  color: #bbb5ab;
+  font: 400 11px/1.55 "Plus Jakarta Sans", sans-serif;
+  letter-spacing: 0;
+  margin: 12px 0 16px;
+  min-height: 52px;
+  text-transform: none;
+}
+
+.prices {
+  border-top: 1px solid rgba(255, 255, 255, .14);
+  border-bottom: 1px solid rgba(255, 255, 255, .14);
+  display: grid;
+  gap: 7px;
+  margin: 0 0 17px;
+  padding: 11px 0;
+}
+
+.prices span {
+  color: #b9b4ac;
+  display: flex;
+  font: 9px "DM Mono", monospace;
+  justify-content: space-between;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.prices b {
+  color: #e0b966;
+  font-size: 11px;
+}
+
+.order-notes {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 0 auto 30px;
+  max-width: 650px;
+  text-align: left;
+}
+
+.order-notes div {
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(197, 154, 73, .35);
+  flex: 1;
+  padding: 15px 17px;
+}
+
+.order-notes b {
+  color: var(--gold);
+  display: block;
+  font: 10px "DM Mono", monospace;
+  letter-spacing: .12em;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.order-notes span {
+  color: #d0cbc2;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+@media (max-width: 750px) {
+  .product-info .product-description {
+    min-height: 51px;
+  }
+
+  .order-notes {
+    flex-direction: column;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
+
+.weight {
+  background: rgba(17, 17, 17, .76);
+  border: 1px solid rgba(255, 255, 255, .32);
+  bottom: 14px;
+  color: #fff3d7;
+  font: 9px "DM Mono", monospace;
+  letter-spacing: .12em;
+  padding: 7px 9px;
+  position: absolute;
+  right: 14px;
+  text-transform: uppercase;
+}
+
+.hero-visual {
+  background:
+    linear-gradient(125deg, transparent 0 29%, rgba(232, 204, 151, .28) 29% 30%, transparent 30% 100%),
+    linear-gradient(34deg, transparent 0 68%, rgba(255, 255, 255, .14) 68% 69%, transparent 69% 100%),
+    linear-gradient(145deg, #21201e, #8f8170 48%, #44372c);
+}
+
+.hero-visual::after {
+  background: rgba(219, 181, 110, .28);
+  clip-path: polygon(0 24%, 43% 0, 66% 29%, 38% 62%, 0 48%);
+  content: "";
+  height: 58%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 70%;
+  z-index: 0;
+}
+
+.hero-visual .cookie,
+.hero-visual .hero-stamp {
+  z-index: 1;
+}
+
+.story-image {
+  background:
+    linear-gradient(118deg, transparent 0 40%, rgba(255, 236, 191, .31) 40% 41%, transparent 41% 100%),
+    linear-gradient(135deg, #373735, #88745d 49%, #c9b28e);
+}
+
+.story-image::after {
+  background: linear-gradient(145deg, rgba(247, 224, 177, .7), rgba(116, 69, 35, .42));
+  clip-path: polygon(11% 9%, 74% 0, 100% 32%, 79% 68%, 100% 100%, 27% 94%, 0 58%);
+  content: "";
+  inset: 12% 9%;
+  position: absolute;
+}
+
+.story-image .flour-mark {
+  z-index: 1;
+}
+
+.story-image .flour-mark {
+  font-size: clamp(78px, 11vw, 135px);
+  letter-spacing: -.1em;
+}

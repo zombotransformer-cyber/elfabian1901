@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Catálogo artesanal de galletas." />
+    <title>1FR · Galletas artesanales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="catalog-overrides.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="1FR, inicio">1<span>FR</span></a>
+      <nav aria-label="Navegación principal"><a href="#catalogo">Catálogo</a><a href="#historia">Nuestra historia</a></nav>
+      <a class="header-contact" data-whatsapp href="#contacto">Contacto <span>↗</span></a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Hechas para compartir</p>
+          <h1 id="hero-title">Pequeños placeres,<br /><em>horneados lento.</em></h1>
+          <p class="intro">Galletas artesanales con ingredientes que se sienten, sabores que reconfortan y ese toque casero que siempre invita a una más.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#catalogo">Ver catálogo <span>↓</span></a>
+            <a class="text-link" href="#historia">Conócenos <span>→</span></a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustración geométrica de panadería artesanal">
+          <div class="cookie cookie-one"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="cookie cookie-two"><i></i><i></i><i></i><i></i></div>
+          <div class="hero-stamp">ARTESANAL<br /><b>•</b> DESDE 2026</div>
+        </div>
+        <div class="scroll-hint"><span></span> Descubre nuestros sabores</div>
+      </section>
+
+      <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> Selección de la casa</p><h2 id="catalog-title">Elige tu <em>favorita.</em></h2></div>
+          <div class="carousel-controls" aria-label="Controles del carrusel"><button class="carousel-button" id="previous" aria-label="Ver productos anteriores">←</button><button class="carousel-button gold" id="next" aria-label="Ver productos siguientes">→</button></div>
+        </div>
+        <div class="product-track" id="product-track">
+          <article class="product-card classic"><div class="product-art"><span class="card-label">01</span><span class="weight">100 g</span><div class="cookie"><i></i><i></i><i></i><i></i></div></div><div class="product-info"><p>La infaltable</p><h3>Clásica</h3><p class="product-description">La clásica galleta con generosas chispas de chocolate.</p><div class="prices"><span>1 unidad <b>S/ 5</b></span><span>6 unidades <b>S/ 25</b></span></div><a data-whatsapp href="#contacto" aria-label="Consultar por galleta clásica">Consultar <b>↗</b></a></div></article>
+          <article class="product-card red"><div class="product-art"><span class="card-label">02</span><span class="weight">100 g</span><div class="cookie"><i></i><i></i><i></i><i></i></div></div><div class="product-info"><p>Suave y especial</p><h3>Red Velvet</h3><p class="product-description">Galleta Red Velvet con delicadas chispas de chocolate blanco.</p><div class="prices"><span>1 unidad <b>S/ 5</b></span><span>6 unidades <b>S/ 25</b></span></div><a data-whatsapp href="#contacto" aria-label="Consultar por galleta red velvet">Consultar <b>↗</b></a></div></article>
+          <article class="product-card pecans"><div class="product-art"><span class="card-label">03</span><span class="weight">100 g</span><div class="cookie"><i></i><i></i><i></i><i></i></div></div><div class="product-info"><p>Crujiente y especial</p><h3>Pecanas</h3><p class="product-description">Una variación de nuestra clásica, con trocitos de pecana en cada bocado.</p><div class="prices"><span>1 unidad <b>S/ 6</b></span><span>6 unidades <b>S/ 28</b></span></div><a data-whatsapp href="#contacto" aria-label="Consultar por galleta con pecanas">Consultar <b>↗</b></a></div></article>
+          <article class="product-card nutella"><div class="product-art"><span class="card-label">04</span><span class="weight">100 g</span><div class="cookie"><i></i><i></i><i></i><i></i></div></div><div class="product-info"><p>Corazón cremoso</p><h3>Nutella</h3><p class="product-description">El sabor clásico de una galleta con un centro de crema de avellanas.</p><div class="prices"><span>1 unidad <b>S/ 6</b></span><span>6 unidades <b>S/ 28</b></span></div><a data-whatsapp href="#contacto" aria-label="Consultar por galleta rellena de nutella">Consultar <b>↗</b></a></div></article>
+          <article class="product-card sprinkles"><div class="product-art"><span class="card-label">05</span><span class="weight">100 g</span><div class="cookie"><i></i><i></i><i></i><i></i></div></div><div class="product-info"><p>La más divertida</p><h3>Arcoíris</h3><p class="product-description">El gusto clásico de siempre, cubierto de chispas multicolor por toda la galleta.</p><div class="prices"><span>1 unidad <b>S/ 5</b></span><span>6 unidades <b>S/ 25</b></span></div><a data-whatsapp href="#contacto" aria-label="Consultar por galleta arcoíris">Consultar <b>↗</b></a></div></article>
+        </div>
+        <p class="swipe-note">Desliza para ver más <span>→</span></p>
+      </section>
+
+      <section class="story" id="historia">
+        <div class="story-image" aria-label="Ilustración geométrica de ingredientes de panadería"><div class="flour-mark">1FR</div></div>
+        <div class="story-copy"><p class="eyebrow"><span></span> Un poco de nosotros</p><h2>Horneamos momentos que se quedan <em>contigo.</em></h2><p>Cada receta comienza con una idea sencilla: convertir una pausa ordinaria en un momento especial. Por eso cuidamos cada detalle, desde la primera mezcla hasta la última chispa.</p><a class="text-link" data-whatsapp href="#contacto">Hablemos por WhatsApp <span>→</span></a></div>
+      </section>
+
+      <section class="contact" id="contacto"><p class="eyebrow"><span></span> ¿Antojo?</p><h2>Una galleta puede<br /><em>mejorar tu día.</em></h2><p>Escríbenos y cuéntanos cuál quieres probar.</p><div class="order-notes"><div><b>Preparación</b><span>Los pedidos se preparan de un día para otro, previa coordinación.</span></div><div><b>Entrega</b><span>Por el momento, entregamos dentro de Breña de 10 a. m. a 8 p. m.</span></div><div><b>Pago</b><span>Yape o Plin al 975 486 973.</span></div></div><a class="button button-light" data-whatsapp href="#">Contactar por WhatsApp <span>↗</span></a></section>
+    </main>
+    <footer><a class="brand" href="#inicio">1<span>FR</span></a><p>Galletas hechas con cariño · <span id="year"></span></p><a href="#inicio">Volver arriba ↑</a></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
